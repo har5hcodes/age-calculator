@@ -9,9 +9,59 @@ body{
     width: 100%;
 }
 .container{
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(244, 253, 253);
+   
+}
+.card-el{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    height: auto;
+    width: auto;
+    margin-top: -50px;
+    background-color: black;
+}
+
+
+#heading-el{
+    background-color: cyan;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+#dob-el{
+    border: 4px solid cyan;
+   background-color: black;
+   padding: 10px 10px;
+   margin-top: 20px;
+   color: white;
+}
+#dob-el::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+#start-btn{
+    background-color: cyan;
+
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 4px solid cyan;
+    color: black;
+    cursor: pointer;
+}
+#start-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#display-el{
+    color:white;
+    padding: 10px 10px;
+    margin: 20px 0;
+    font-size: 24px;
 }

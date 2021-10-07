@@ -1,9 +1,8 @@
 
-
-const startEl = document.getElementById("start-el")
+const startBtn = document.getElementById("start-btn")
 const displayEl = document.getElementById("display-el")
 
-startEl.addEventListener("click", function () {
+startBtn.addEventListener("click", function () {
     let dobEl = document.getElementById("dob-el").value
     if (isNaN(new Date(dobEl))) {
         displayEl.textContent = `Enter your Date of Birth`
@@ -14,7 +13,7 @@ startEl.addEventListener("click", function () {
         if (age < 0) {
             displayEl.textContent = `Invalid Input`
         } else {
-            displayEl.textContent = `${age}`
+            displayEl.textContent = `Age: ${age}`
         }
     }
 })
